@@ -5,7 +5,7 @@ from langchain_groq import ChatGroq
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
-api_key = "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"
+api_key = "SEU_API_AQUI"
 
 template = """
 você é um assistente virtual.
