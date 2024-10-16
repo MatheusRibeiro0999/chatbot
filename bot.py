@@ -5,7 +5,11 @@ from langchain_groq import ChatGroq
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
+<<<<<<< HEAD
 api_key = "SEU_API_AQUI"
+=======
+api_key = "sua_api_aqui"
+>>>>>>> 44e9046c6484579fc3b4a7d7d45289b77ea93004
 
 template = """
 você é um assistente virtual.
@@ -33,6 +37,7 @@ def send_message(event=None):
         
         chat_text.see(tk.END)
     
+<<<<<<< HEAD
 #função do modo noturno
 def modo_noturno():
     if root["bg"] == "white":  
@@ -87,3 +92,7 @@ root.mainloop()
 #adicionar função para acompanhar resposta do bot
 #adicionar função para ajustar tela cheia
 #adicionar função para upar arquivos como excel, word e pdf para o bot ler
+=======
+    response = llm_chain.run(input=user_input)
+    print(f"assistente: {response}")
+>>>>>>> 44e9046c6484579fc3b4a7d7d45289b77ea93004
