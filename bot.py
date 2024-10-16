@@ -4,7 +4,7 @@ from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 import os
 
-api_key = "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"
+api_key = "sua_api_aqui"
 
 template = """
 você é um assistente virtual.
