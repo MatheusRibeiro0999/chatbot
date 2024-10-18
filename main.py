@@ -26,11 +26,11 @@ user_input_entry.pack(side=tk.LEFT, padx=10, pady=10)
 user_input_entry.bind("<Return>", lambda event: enviar_mensagem(event, user_input_entry, chat_text, llm_chain, root))
 
 #botão Enviar
-send_button = tk.Button(root, text="Enviar", command=lambda: enviar_mensagem(None, user_input_entry, chat_text, llm_chain, root))
-send_button.pack(side=tk.LEFT, padx=10, pady=10)
+botao_enviar = tk.Button(root, text="Enviar", command=lambda: enviar_mensagem(None, user_input_entry, chat_text, llm_chain, root))
+botao_enviar.pack(side=tk.LEFT, padx=10, pady=10)
 
 #botão Noturno
-modo_escuro = tk.Button(root, text="Modo Escuro", command=lambda: modo_noturno(root, chat_text, user_input_entry, send_button, modo_escuro), bg="lightgray", fg="black")
+modo_escuro = tk.Button(root, text="Modo Escuro", command=lambda: modo_noturno(root, chat_text, user_input_entry, botao_enviar, modo_escuro), bg="lightgray", fg="black")
 modo_escuro.pack(side=tk.LEFT, padx=10, pady=10)
 
 root.mainloop()
